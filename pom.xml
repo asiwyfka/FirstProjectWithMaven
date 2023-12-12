@@ -60,15 +60,15 @@
                     </execution>
                 </executions>
                 <configuration>
-<outputDirectory>${basedir}\target\resources </outputDirectory>
+                    <outputDirectory>${basedir}\target\resources</outputDirectory>
                     <resources>
                         <resource>
                             <directory>src/main/resources</directory>
-                       <includes>
-                           <include>
-                               **/*.png
-                           </include>
-                       </includes>
+                            <includes>
+                                <include>
+                                    **/*.png
+                                </include>
+                            </includes>
 
 
                         </resource>
@@ -77,19 +77,19 @@
             </plugin>
             <!-- unit test plugin -->
             <!--  Test*,*Test,*Tests,*TestCase-->
-           <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <configuration>
-                   <includes>
-                       <include>Sample.java</include>
-                   </includes>
-               </configuration>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>Sample.java</include>
+                    </includes>
+                </configuration>
 
 
-           </plugin>
+            </plugin>
 
 
-       </plugins>
-   </build>
+        </plugins>
+    </build>
 </project>
